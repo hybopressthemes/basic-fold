@@ -1,0 +1,331 @@
+.header-branding {
+	padding: 0;
+}
+
+.branding-column-left .navbar-text {
+
+}
+
+.branding-column-right .navbar-nav > li > a {
+	padding-top: 28px;
+	padding-bottom: 28px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.menu-style-4 .nav > li > a:hover::after,
+.menu-style-4 .nav > li > a:focus::after {
+  height: 2px;
+  margin-bottom: -2px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.site-inner {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.content-area,
+.sidebar-area {
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+
+@media (min-width: 992px) {
+	.layout-2c-l .content-area:before {
+		border-right: 1px solid #eee;
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.layout-2c-r .content-area:before {
+		border-left: 1px solid #eee;
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.layout-2c-l .sidebar-area:before {
+		border-left: 1px solid #eee;
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: -1px;
+	}
+
+	.layout-2c-r .sidebar-area:before {
+		border-right: 1px solid #eee;
+		content: "";
+		position: absolute;
+		top: 0;
+		right: -1px;
+		bottom: 0;
+	}
+
+	.layout-2c-l .content-area {
+		padding-right: 50px;
+	}
+
+	.layout-2c-l .sidebar-area {
+		padding-left: 50px;
+	}
+
+	.layout-2c-r .content-area {
+		padding-left: 50px;
+	}
+
+	.layout-2c-r .sidebar-area {
+		padding-right: 50px;
+	}
+}
+
+
+
+.pagination {
+	display: inline-block;
+	margin: 0;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+	-webkit-border-radius: 100em;
+	border-radius: 100em;
+	font-size: 11px;
+	font-weight: 400;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 3px;
+	padding: 0;
+	text-decoration: none;
+	width: 35px;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+	background-color: #eee;
+	border-color: #ddd;
+	color: #333;
+	font-weight: bold;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+	-webkit-border-bottom-left-radius: 100em;
+	border-bottom-left-radius: 100em;
+	-webkit-border-top-left-radius: 100em;
+	border-top-left-radius: 100em;
+}
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+	-webkit-border-bottom-right-radius: 100em;
+	border-bottom-right-radius: 100em;
+	-webkit-border-top-right-radius: 100em;
+	border-top-right-radius: 100em;
+}
+
+.pagination-meta {
+	line-height: 35px;
+}
+
+
+
+.entry-byline .post-format-link:before,
+.entry-byline .entry-author:before,
+.entry-byline .entry-published:before,
+.entry-byline .comments-link:before,
+.entry-byline .post-edit-link:before,
+.entry-footer .post-format-link:before,
+.entry-footer .entry-author:before,
+.entry-footer .entry-published:before,
+.entry-footer .comments-link:before,
+.entry-footer .post-edit-link:before,
+.comment-author:before,
+.comment-reply-link:before,
+.comment-reply-title:before,
+.comment-permalink:before,
+.comment-published:before,
+.comment-edit-link:before,
+.entry-author:before,
+.comment-author:before,
+.comment-form-author label[for="author"]:before,
+.email-address:before,
+.comment-form-email label[for="email"]:before,
+.comment-form-url label[for="url"]:before,
+.comment-form-comment label[for="comment"]:before {
+	content: "" !important;
+	padding-bottom: 0;
+	padding-right: 0;
+}
+
+.entry-byline .post-format-link:after,
+.entry-byline .entry-author:after,
+.entry-byline .entry-published:after,
+.entry-byline .comments-link:after,
+.entry-footer .post-format-link:after,
+.entry-footer .entry-author:after,
+.entry-footer .entry-published:after,
+.entry-footer .comments-link:after {
+	content: "/";
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	padding: 0 0.45em;
+	padding-left: 7px;
+	position: relative;
+	vertical-align: middle;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.entry-byline > :last-child:after,
+.entry-footer > :last-child:after {
+	content: "";
+}
+
+.entry-byline .post-format-link,
+.entry-byline .entry-author,
+.entry-byline .entry-published,
+.entry-byline .comments-link,
+.entry-footer .post-format-link,
+.entry-footer .entry-author,
+.entry-footer .entry-published,
+.entry-footer .comments-link {
+	margin-right: 0;
+}
+
+
+.widget-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.page-title {
+	font-size: 24px;
+	margin-bottom: 0;
+}
+
+.archive.user .author-box,
+.search .search-meta  {
+	position: relative;
+	margin-bottom: 40px;
+	border-radius: 0;
+}
+
+.archive.user .author-box,
+.search .search-meta .loop-description {
+	border: none;
+
+	padding: 0 0 44px 0;
+	padding-right: 50px;
+}
+
+.archive.user .author-box:after,
+.search .search-meta .loop-description:after {
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width: 600%;
+	right: 0;
+	border-bottom-color: #eee;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	content: '';
+}
+
+.search-meta p {
+	margin-bottom: 22px;
+}
+
+.search-meta .search-form {
+	position: relative;
+	max-width: 300px;
+}
+
+.search-meta .page-header {
+	margin-right: 50px;
+}
+
+
+@media (min-width: 992px) {
+	.layout-2c-l.user .content-area .author-box,
+	.layout-2c-l.search .search-meta {
+	  margin-right: -50px;
+	}
+	.layout-2c-r.user .content-area .author-box,
+	.layout-2c-r.search .search-meta {
+	  margin-left: -50px;
+	}
+}
+
+@media (max-width: 991px) {
+	.layout-2c-l.user .content-area .author-box,
+	.layout-2c-l.search .search-meta {
+	  margin-right: -6%;
+	}
+	.layout-2c-r.user .content-area .author-box,
+	.layout-2c-r.search .search-meta {
+	  margin-left: -6%;
+	}
+}
+
+.comment-list .comment article {
+	margin-bottom: 30px;
+}
+
+.comment-list li {
+	margin-bottom: 30px;
+}
+
+.comment-list li > .children,
+.comment-list .children li > .children {
+	margin-left: 40px;
+}
+
+.comment-edit-link {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.comment-list .avatar {
+	margin-bottom: 8px;
+	margin-right: 20px;
+}
+
+.comment-author a {
+	color: #222;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 1;
+}
+
+.singular .author-box {
+    border-left: none;
+    border-right: none;
+    border-top-width: 3px;
+    border-top-color: #333;
+	margin-top: 64px;
+}
+
+
+.widget li a {
+  color: #777;
+}
