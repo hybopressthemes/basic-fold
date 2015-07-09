@@ -66,7 +66,7 @@ function child_theme_page_header_title( $page_title, $page_title_classes ) {
 
 	if ( is_author() ) {
 		$page_title = strip_tags( $page_title );
-		$page_title = __( 'Author Archive for: ', 'hybopress' ) . $page_title;
+		$page_title = __( 'Author Archive for: ', 'fold' ) . $page_title;
 		$page_title     = sprintf( '<h1 class="%s">%s</h1>', $page_title_classes, $page_title );
 	} else if ( ! empty( $wp_query->found_posts ) && is_search() ) {
 		$page_title = strip_tags( $page_title );
@@ -107,10 +107,10 @@ function child_theme_loop_pagination_args( $args ) {
 		$current = ( get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1 );
 		$pages   = $wp_query->max_num_pages;
 
-		$args['before']   .= '<span class="pagination-meta pull-right">' . sprintf( __( 'Page %d of %d', 'hybopress' ), $current, $pages ) . '</span>';
+		$args['before']   .= '<span class="pagination-meta pull-right">' . sprintf( __( 'Page %d of %d', 'fold' ), $current, $pages ) . '</span>';
 
-		$args['prev_text'] = sprintf( _x( '&larr; %1$s Previous %2$s', 'posts navigation', 'hybopress' ), '<span class="sr-only">', '</span>' );
-		$args['next_text'] = sprintf( _x( '%1$s Next %2$s &rarr;', 'posts navigation', 'hybopress' ), '<span class="sr-only">', '</span>' );
+		$args['prev_text'] = sprintf( _x( '&larr; %1$s Previous %2$s', 'posts navigation', 'fold' ), '<span class="sr-only">', '</span>' );
+		$args['next_text'] = sprintf( _x( '%1$s Next %2$s &rarr;', 'posts navigation', 'fold' ), '<span class="sr-only">', '</span>' );
 
 		return $args;
 
